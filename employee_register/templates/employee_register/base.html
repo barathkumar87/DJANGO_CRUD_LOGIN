@@ -13,11 +13,17 @@
     <link rel="icon" href="https://sierradigitalinc.com/wp-content/uploads/2020/03/cropped-sdfav2-32x32.png" sizes="32x32">
     <link rel="icon" href="https://sierradigitalinc.com/wp-content/uploads/2020/03/cropped-sdfav2-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="https://sierradigitalinc.com/wp-content/uploads/2020/03/cropped-sdfav2-180x180.png">
+
 </head>
 
 <body style="background-color: #000000;
 background-image: linear-gradient(147deg, #000000 0%, #434343 74%)">
     <div class="container">
+          <div class="col-md-4" >
+            <a href="{% url 'index' %}" class=" btn btn-secondary btn-block btn-lg" style="background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);width: fit-content;/* padding-right: 150px; */position: absolute;right: -850px;top: -40px;font-size: small;">
+                <i class="fas fa-sign-out-alt"></i> Log Out
+            </a>
+        </div>
         <div class="col-md-10 offset-md-1 mt-5">
             <div class="jumbotron" style="
     background-color: #f3e6e8;
@@ -26,6 +32,7 @@ background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%);padding: 2rem
                 <p class="lead font-italic">Python Django project </p>
                 <hr class="my-4">
                 {% block content %}
+                 
                 {% endblock content %}
             </div>
         </div>
